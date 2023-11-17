@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-message {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+/* Product Styles */
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  color: #888;
+}
+
+.product button {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #111;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.product button:hover {
+  background-color: #ddb347;
+}
+
+/* Alert Styles */
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Cart Styles */
+.cart-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.cart-item img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item h3 {
+  margin-top: 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #111;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.quantity-controls button:hover {
+  background-color: #ddb347;
+}
+
+/* Button Styles */
+.button {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #111;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ddb347;
+}
+
